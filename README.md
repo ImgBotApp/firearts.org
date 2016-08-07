@@ -1,1 +1,0 @@
-# firearts.org
