@@ -1,0 +1,50 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !^www.firearts.org [NC]
+RewriteRule ^(.*)$ http://www.firearts.org/$1 [L,R=301]
+
+# 
+# File Redirects
+# Redirect 301 /sample.htm http://www.firearts.org/sample.html
+#
+
+Redirect 301 /gall.htm http://www.firearts.org/gallery.html
+Redirect 301 /figure.htm http://www.firearts.org/figure.html
+Redirect 301 /bryce.htm http://www.firearts.org/bryce.html
+Redirect 301 /vince.htm http://www.firearts.org/vince.html
+Redirect 301 /foundry.htm http://www.firearts.org/foundry.html
+Redirect 301 /updates.html http://www.firearts.org/wordpress/
+Redirect 301 /home.html http://www.firearts.org/
+Redirect 301 /bouba.html http://www.firearts.org/gallery/index.php?cat=12
+Redirect 301 /michael.html http://www.firearts.org/gallery/index.php?cat=11
+Redirect 301 /seth.html http://www.firearts.org/gallery.html
+Redirect 301 /dragon.html http://www.firearts.org/gallery.html
+Redirect 301 /keiko.html http://www.firearts.org/gallery.html
+Redirect 301 /jewelry.html http://www.firearts.org/classes.html
+Redirect 301 /index_old.html http://www.firearts.org/
+Redirect 301 /elio.html http://www.firearts.org/elisotelo.html
+Redirect 301 /contact.html http://www.firearts.org/contactus.html
+Redirect 301 /classes.htm http://www.firearts.org/classes.html
+Redirect 301 /aboutsite.html http://www.firearts.org/aboutus.html
+Redirect 301 /FireArts_ClassSchedule.pdf http://www.firearts.org/classes.html
+Redirect 301 /registration.pdf http://www.firearts.org/FireArts_RegistrationForm.pdf
+
+Redirect 301 /workshops http://www.firearts.org/workshops.html
+
+# 
+# Directory Redirects
+# RedirectMatch 301 /blog(.*) http://www.askapache.com/$1
+
+RedirectMatch 301 /who(.*) http://www.firearts.org/vince.html
+RedirectMatch 301 /what(.*) http://www.firearts.org/classes.html
+RedirectMatch 301 /when(.*) http://www.firearts.org/events.html
+RedirectMatch 301 /where(.*) http://www.firearts.org/location.html
+RedirectMatch 301 /why(.*) http://www.firearts.org/aboutus.html
+RedirectMatch 301 /how(.*) http://www.firearts.org/contactus.html
+
+RedirectMatch 301 /blog(.*) http://www.firearts.org/wordpress/
+RedirectMatch 301 /events/(.*) http://www.firearts.org/events.html
+RedirectMatch 307 /home(.*) http://www.firearts.org/
+
+# temp maintenance
+RedirectMatch 307 /gallery/(.*) http://www.firearts.org/maintenance.html
+RedirectMatch 307 /wordpress/(.*) http://www.firearts.org/maintenance.html

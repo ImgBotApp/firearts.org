@@ -1,0 +1,82 @@
+/* CSS Document */
+
+
+
+
+/* main navigation styles
+--------------------------------------------------------------------------- */	
+#mainnav {width: 304px; padding: 0px; margin: 60px 0px 10px 0px; border: 0px; background-color: #000; float:right;}
+#mainnav ul { height: 30px; background: url(../i/g/navbar.gif); margin: 0; padding: 0; position: relative;}
+ 
+#mainnav li {margin: 0; padding: 0; list-style: none; position: absolute; top: 0;}
+#mainnav li, #mainnav a {height: 30px; display: block;border-bottom:0 none;}
+
+#aboutus {left: 1px; width: 84px;}
+#classes {left: 84px; width: 77px;}
+#gallery {left: 162px; width: 71px;}
+#firedup {left: 233px; width: 71px;}
+
+#aboutus a:hover {background:transparent url(../i/g/navbar.gif) -1px -30px no-repeat;}
+#classes a:hover {background:transparent url(../i/g/navbar.gif) -84px -30px no-repeat;}
+#gallery a:hover {background:transparent url(../i/g/navbar.gif) -162px -30px no-repeat;}
+#firedup a:hover {background:transparent url(../i/g/navbar.gif) -233px -30px no-repeat;}
+
+
+/* nav highlight replacement */
+body.aboutus li#aboutus a {background:transparent url(../i/g/navbar.gif) -1px -30px no-repeat;}
+body.classes li#classes a {background:transparent url(../i/g/navbar.gif) -84px -30px no-repeat;}
+body.gallery li#gallery a {background:transparent url(../i/g/navbar.gif) -162px -30px no-repeat;}
+body.firedup li#firedup a {background:transparent url(../i/g/navbar.gif) -233px -30px no-repeat;}
+
+
+/*subnavigation positioning and hide
+--------------------------------------------------------------------------- */	
+#nav li ul
+{
+	display: none;
+	position: absolute;
+	top: 30px;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	list-style: none;
+	z-index: 6000; 
+	
+}
+
+#nav li li, #nav li li a  {height: auto; margin: 0;} /*clears main nav height w/o min-height declaration*/
+
+	
+/*subnavigation styles
+--------------------------------------------------------------------------- */	
+
+#nav li#aboutus li.subnav, #nav li#classes li.subnav, #nav li#gallery li.subnav, #nav li#firedup li.subnav  {
+		display: block;
+		position: relative;
+		top: 0; 
+		text-align: right;
+		width: 120px;
+		margin: 0;
+		padding: .5em 10px .6em 10px;
+		background: url(../i/g/subnav_bg.png) right;
+		}
+		
+#nav li#aboutus li.subnav a, #nav li#classes li.subnav a, #nav li#gallery li.subnav a, #nav li#firedup li.subnav a { 
+		display: block;
+		font-family: arial, helvetica, sans-serif;
+		font-size: 14px;
+		color: #999;
+		font-weight: normal;
+		text-decoration: none;
+		background: none;
+		}
+
+#nav li#aboutus li.subnav a:hover, #nav li#classes li.subnav a:hover, #nav li#gallery li.subnav a:hover, #nav li#firedup li.subnav a:hover {
+
+	color:#fff;
+}
+		
+#nav li#aboutus:hover ul, #nav li#aboutus.over ul, #nav li#classes:hover ul, #nav li#classes.over ul, #nav li#gallery:hover ul, #nav li#gallery.over ul, #nav li#firedup:hover ul, #nav li#firedup.over ul { display: block; z-index: 4000;}
+
+li.subnav a:hover {color:#fff;}

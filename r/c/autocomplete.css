@@ -1,0 +1,31 @@
+.ac_results {
+	padding: 0;
+	border: 1px solid #d2d2d2; 
+	background-color: #f9f9f9;
+	overflow: hidden;
+	}
+
+.ac_results ul {
+	width: 100%;
+	list-style: none;
+	list-style-position: outside;
+	}
+
+.ac_results li {
+	padding: 4px 5px;
+	width: 100%;
+	cursor: default;
+	display: block;
+	font-size: 12px;
+	overflow: hidden;
+	color:#000;
+	}
+
+.ac_loading {
+	background : #fff url('i/g/spinner.gif') right center no-repeat;
+	}
+
+.ac_over {
+	color: #fff;
+	background-color: #acacac;
+	}

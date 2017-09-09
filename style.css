@@ -1,0 +1,592 @@
+  
+
+/* **************General Page**************** */
+
+body {
+	background-color:#000;
+	color:#fff;
+	font-family:"Futura Lt BT", arial, sans-serif;
+	}
+	
+p, h1, h2, h3, h4, ul, li, blockquote, div, span {
+	margin:0;
+	padding:0;
+}
+
+p strong { color:#aaa;border-bottom:1px dotted #aaa; }
+
+/* **************Table Cell Properties*************** */
+
+.main {
+	width: 735px;
+	}
+
+.leftheader {
+	width: 137px;
+	background-color: #f90;
+    padding-bottom: 25px;
+	}
+    .leftheader img {
+        border: 0; 
+        width: 133px; 
+        height: 137px; 
+        margin: 2px;
+    }
+
+.banner {
+	width: 598px;
+	background-color: #f90;
+    padding-bottom: 25px;
+	}
+    .banner img {
+        width: 594px;
+        height: 137px;
+        margin: 2px;
+        border: 0;
+        }
+
+.pageindicator {
+	text-align: right;
+	height: 39px;
+	width: 590px;
+	background-color: #900;
+	-moz-border-radius: 5px;
+	}
+
+.navbarbase {
+	width: 137px;
+	text-align: center;
+	vertical-align: top;
+	background-color: #f90;
+	}
+
+.navbarbase + td {
+    vertical-align: top;
+}
+
+.textbox {
+	width: 598px;
+	background-color: #000;
+	}
+
+.navbar {
+	width: 137px;
+	}
+
+/* This class is for the navigation bar primary links. For example the links for "home," "classes," "gallery," etc. are the primary navigation links.  This only applies to the background and table-cell size of the table containing these links, NOT the links. To change the links see the four ".class1" link settings to change them below (located under the section entitled Links */
+
+.navbarcellmain {
+	height: 25px;
+	width: 137px;
+	background-color: #c60;
+	text-align:left;
+	}
+
+/* This class is for the navigation bar secondary links. For example underneath the link for "home" are the secondary links "about us," "location," "updates," and "membership."  This only applies to the background and table-cell size of the table containing these links, NOT the links. To change the links see the four ".class2" link settings to change them below (located under the section entitled Links */
+
+.navbarcell2 {
+	height: 25px;
+	width: 137px;
+	vertical-align: middle; 
+	background-color: #000;
+	text-align: left;
+	}
+
+.navbarcell_donate {
+	height: 25px;
+	width: 137px;
+	background-color: #f90;
+	}
+
+.bottomleft {
+	width: 137px;
+	background-color: #f90;
+	}
+
+.footer {
+	width: 598px;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	font-size: 80%;
+	}
+
+/* *************Links************** */
+
+.current1 {
+	color:#f90;
+	font-weight:bold;
+	margin-left:10px;
+	}
+
+.current2 {
+	color:#fff;
+	text-decoration:underline overline;
+	margin-left:15px;
+	font-size: 12px;
+	}
+
+a:link {
+	color:#900;
+	text-decoration:underline;
+	}
+
+a:visited {
+	color:#900;
+	text-decoration:underline;
+	}
+
+a:active {
+	color:#900;
+	text-decoration:underline;
+	}
+
+a:hover {
+	color:#f00;
+	text-decoration:underline;
+	}
+
+/* ****Navigation Links for the Coppermine Gallery**** */
+
+.gallery a:link {
+	color:#900;
+	text-decoration:underline;
+	font-size:50%;
+	}
+
+.gallery a:visited {
+	color:#900;
+	text-decoration:underline;
+	}
+
+.gallery a:active {
+	color:#900;
+	text-decoration:underline;
+	}
+
+.gallery a:hover {
+	color:#f00;
+	text-decoration:underline;
+	}
+
+.class1 a:link {
+	margin-left:10px; 
+	color:#900; 
+	text-decoration:none; 
+	font-weight:bold; 
+	text-align:right;
+	}
+
+.class1 a:visited {
+	margin-left:10px; 
+	color:#900; 
+	text-decoration:none; 
+	font-weight:bold; 
+	text-align:right;
+	}
+
+.class1 a:active {
+	margin-left:10px; 
+	color:#900; 
+	text-decoration:none; 
+	font-weight:bold; 
+	text-align:right;
+	}
+
+.class1 a:hover {
+	margin-left:10px; 
+	color:#f90; 
+	font-weight:bold; 
+	text-align:right;
+	}
+
+.class2 a:link {
+	margin-left:15px; 
+	color:#fff; 
+	text-decoration:none;
+	font-size: 13px;
+	}
+
+.class2 a:visited {
+	margin-left:15px; 
+	color:#fff; 
+	text-decoration:none;
+	font-size: 13px;
+	}
+
+.class2 a:active {
+	margin-left:15px; 
+	color:#fff; 
+	text-decoration:none;
+	font-size: 13px;
+	}
+
+.class2 a:hover {
+	margin-left:15px; 
+	color:#fff; 
+	text-decoration:underline overline;
+	font-size: 13px;
+	}
+
+/* ********Fonts, Headers, and Footers********** */
+
+ul, p, .description {
+	font-size: 80%;
+	line-height:120%;
+	margin: 0 0 10px 25px;
+}
+
+ul {
+	margin-left: 25px;
+	padding-left:25px;
+}
+
+.header1, h1 {
+	color:#fff;
+	font-size:200%;
+	text-align:right;
+	font-weight:normal;
+	}
+
+.header2, h2 {
+	font-size: 150%;
+	color: #900; 
+	/*font-variant: small-caps;	*/
+	font-weight:normal;
+	margin:25px 0 5px 25px;
+	}
+	
+h2.section-head {
+	margin-top:50px;
+	border-bottom:1px solid #900;	
+}
+
+.header3, h3 {
+	font-size: 150%; 
+	color: #900; 
+	/*font-variant: small-caps;*/
+	font-weight:normal;
+	margin:10px 0 5px 25px;
+}
+
+.header4, h4 {
+	font-size: 125%; 
+	color: #900; 
+	/*font-variant: small-caps;	*/
+	font-weight:normal;
+	margin:10px 0 5px 25px;
+	}
+
+.description2 {
+	font-size: 125%;
+	margin-left: 25px;
+	}
+
+.firstletter {
+	font-size:300%;
+	width: .9em;
+	line-height: 75%;
+	color: #900;
+	float: left;
+	}
+
+.firstletter3 {
+	font-size: 300%;
+	width: .75em;
+	line-height: 75%;
+	color: #900;
+	float: left;
+	}
+
+.firstletter4 {
+	font-size: 300%;
+	width: .3em;
+	line-height: 75%;
+	color: #900;
+	float: left;	
+	}
+
+.date {
+	font-size: 75%;
+	}
+
+.note {
+	font-size: 75%;
+	text-decoration: none;
+	}
+
+.tiny {
+	font-size: 75%;
+	}
+
+.underline {
+	text-decoration: underline;	
+	}
+
+.backtotop {
+	text-decoration: underline;
+	font-size: 80%;
+	}
+
+.formindent {
+	margin-left: 25px;	
+	}
+
+.requiredfields {
+	color: #900;
+	font-style: italic;
+	font-weight: bold;
+	}
+
+.ital {
+	font-style: italic;	
+	}
+
+.emphasis {
+	font-style: italic;
+	color: #990000;
+	}
+
+/* ************Special Features*********** */
+
+.float1 {
+	color: #900;
+	float: left;
+	width: 100px; 
+	height: 25px; 
+	margin: 0px 10px 10px 0px;
+	line-height: 18px; 
+	text-align: left; 
+	font-size: 22px;
+	}
+
+img.floatright {
+	float: right;
+	margin: 4px;
+	}
+
+img.floatleft {
+	float: left;
+	margin: 4px;
+	}
+
+/* COPPERMINE GaLLERY STYLE INFORMaTION: The following style classes apply to the Coppermine Gallery Page. To avoid overlap of styles, I have brought over the needed style code from the Coppermine theme and placed it here. */
+
+.admin_menu_thumb {
+	font-family:"Futura Lt BT", arial, sans-serif;
+	font-size: 10px;
+	border: 1px solid #666;
+	background: #ccc;
+	background-position : bottom;
+	color: #000;
+	font-weight: bold;
+	margin: 0px;
+	width: 85px;
+	}
+
+.admin_menu_thumb a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	position: relative;
+	padding: 1px 5px;
+	}
+
+.admin_menu_thumb a:hover {
+	color: #000;
+	text-decoration: underline;
+	}
+
+.admin_menu {
+	font-family:"Futura Lt BT", arial, sans-serif;
+	font-size: 10px;
+	border-top: 2px solid #999;
+	border-left: 2px solid #999999;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	background: #ccc;
+	background-position : bottom;
+	color: #000;
+	margin: 0px;
+	text-align: center;
+	}
+
+.admin_menu a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	position: relative;
+	padding: 1px 5px;
+	}
+
+.admin_menu a:hover {
+	color: #000;
+	text-decoration: underline;
+	}
+	
+.maintable {
+	border: 1px solid #666;
+	margin: 1px;
+	background-image: url(images/handu.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	}
+
+.tableh1 {
+	background: #900;
+	font-size: 14px;
+	color : #fff;
+	padding: 6px 10px;
+	}
+
+.tableh1_compact {
+	background: #c60;
+	color : #fff;
+	padding: 2px 5px;
+	font-size: 8px;
+	}
+	
+.tableh2 {
+	background: #f90;
+	color : #900;
+	padding: 3px 10px;
+	}
+
+.tableh2_compact {
+	background: transparent;
+	color : #fff;
+	padding: 2px 5px;
+	}
+
+.tableb {
+	background: transparent;
+	padding: 2px 10px;
+	}
+
+.tableb_compact {
+	background: transparent;
+	padding: 2px 5px;
+	}
+
+.tablef {
+	background: transparent;
+	padding: 10px;
+	}
+
+.cattitle  {
+	font-weight: bold;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color : #fff;
+	}
+
+.catlink {
+	font-size: 24px;
+	display: block;
+	margin-bottom: 2px;
+	}
+
+.catlink a {
+	text-decoration: underline;
+	color: #900;
+	letter-spacing: 0,5px;
+	}
+
+.catlink a:hover {
+	color: #f00;
+	text-decoration: none;
+	}
+
+.image {
+	border: solid 2px #999;
+	margin: 2px;
+	}
+
+.thumbnails {
+	background: transparent;
+	padding: 5px;
+	}
+
+.album_stat {
+	font-size: 75%;
+	margin: 5px 0px;
+	}
+
+.statlink {
+	color: #fff;
+	}
+
+.statlink a {
+	text-decoration: none;
+	color: #fff;
+	}
+
+.statlink a:hover {
+	color: #fff;
+	text-decoration: underline;
+	}
+	
+/* registration form styles  */
+.form_title{
+    color : #000000;
+    font-size: 13px;
+    font-family: "Futura Lt BT", arial, sans-serif; sans-serif;
+    font-weight : bold;
+}
+
+.form_field {
+    font-size : 15px;
+    font-family : "Futura Lt BT", arial, sans-serif;
+    color : #FFFFFF;
+    text-align:left;
+}
+
+.form_text{
+    font-size : 14px;
+    font-family : "Futura Lt BT", arial, sans-serif;
+    color : #000000;
+}
+
+.form_text2{
+    font-size : 14px;
+    font-family : "Futura Lt BT", arial, sans-serif;
+    color : #FFFFFF;
+}
+
+.text_box{
+    font-size : 11px;
+    font-family : "Futura Lt BT", arial, sans-serif;
+    color : #000000;
+    width:200px;
+}
+
+.text_area{
+    font-size : 11px;
+    font-family : "Futura Lt BT", arial, sans-serif;
+    color : #000000;
+    width:200px;
+    height:60px;
+}
+
+.text_select{
+    font-size : 11px;
+    font-family : "Futura Lt BT", arial, sans-serif;
+    color : #000000;
+}
+
+.form_error{
+    font-size : 14px;
+    font-family : "Futura Lt BT", arial, sans-serif;
+    color : #ff0000;
+    font-weight : bold;
+}
+
+.copyright{
+    font-size : 11px;
+    font-family : "Futura Lt BT", arial, sans-serif;
+    color : #FFFFFF;
+}
+
+/* clearFloat - leave at bottom */
+
+.clearFloat{clear:both;height:0;margin:0;padding:0;border:0;font-size:0;line-height:0;}
