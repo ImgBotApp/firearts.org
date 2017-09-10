@@ -204,24 +204,6 @@
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://www.firearts.org/supplies.html</loc>
-  <priority>0.5</priority>
-  <lastmod>2016-08-06T01:23:10+00:00</lastmod>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://www.firearts.org/museums.html</loc>
-  <priority>0.5</priority>
-  <lastmod>2016-08-06T01:23:10+00:00</lastmod>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://www.firearts.org/artsites.html</loc>
-  <priority>0.5</priority>
-  <lastmod>2016-08-06T01:23:10+00:00</lastmod>
-  <changefreq>daily</changefreq>
-</url>
-<url>
   <loc>http://www.firearts.org/wishlist.html</loc>
   <priority>0.5</priority>
   <lastmod>2016-08-06T01:23:10+00:00</lastmod>
