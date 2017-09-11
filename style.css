@@ -563,7 +563,8 @@ a:hover {
 
 .leftheader a,
 .banner a,
-.navbar a {
+.navbar a,
+.class-categories a {
     border-bottom: none;
 }
 
@@ -574,6 +575,7 @@ a:hover {
     margin-left: 0;
     margin-left: .5rem;
     font-weight: 600;
+    padding-left: .5rem;
 }
 
 .navbar a:focus {
@@ -661,14 +663,9 @@ h3 {
     font-size: 1.5rem;
 }
 
-.header4, h4 {
+h4 {
     font-size: 1.25rem;
 }
-
-.description2 {
-	font-size: 125%;
-	margin-left: 25px;
-	}
 
 .date {
 	font-size: 75%;
@@ -701,6 +698,23 @@ h3 {
 	font-style: italic;
 	color: #990000;
 	}
+
+/* ************Classes*********** */
+
+.class-categories {
+    width: 100%;
+}
+
+.class-categories td:not(.pageindicator) {
+    width: 118px;
+    height: 118px;
+    text-align: center;
+}
+
+.class-categories td img {
+    margin: .125rem;
+}
+
 
 /* ************Special Features*********** */
 
