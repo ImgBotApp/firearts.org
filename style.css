@@ -1,318 +1,677 @@
-  
+/**
+ * Contents
+ * - normalize.css
+ * - fac.css
+ */
+
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/*
+ * fac.css
+ */
 
 /* **************General Page**************** */
 
 body {
-	background-color:#000;
-	color:#fff;
-	font-family:"Futura Lt BT", arial, sans-serif;
-	}
-	
-p, h1, h2, h3, h4, ul, li, blockquote, div, span {
-	margin:0;
-	padding:0;
+    background-color: #222;
+    color: #c9c9c9;
+    font-family: "Futura Lt BT", arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
 }
 
-p strong { color:#aaa;border-bottom:1px dotted #aaa; }
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+p + p {
+    margin-top: 1rem;
+}
+
+p strong {
+    color: #fff;
+}
+
+td {
+    vertical-align: top;
+}
 
 /* **************Table Cell Properties*************** */
 
 .main {
-	width: 735px;
-	}
-
-.leftheader {
-	width: 137px;
-	background-color: #f90;
-    padding-bottom: 25px;
-	}
-    .leftheader img {
-        border: 0; 
-        width: 133px; 
-        height: 137px; 
-        margin: 2px;
-    }
-
-.banner {
-	width: 598px;
-	background-color: #f90;
-    padding-bottom: 25px;
-	}
-    .banner img {
-        width: 594px;
-        height: 137px;
-        margin: 2px;
-        border: 0;
-        }
-
-.pageindicator {
-	text-align: right;
-	height: 39px;
-	width: 590px;
-	background-color: #900;
-	-moz-border-radius: 5px;
-	}
-
-.navbarbase {
-	width: 137px;
-	text-align: center;
-	vertical-align: top;
-	background-color: #f90;
-	}
-
-.navbarbase + td {
-    vertical-align: top;
+    width: 735px;
+    margin: 1rem auto;
 }
 
-.textbox {
-	width: 598px;
-	background-color: #000;
-	}
+.leftheader {
+    width: 137px;
+}
 
-.navbar {
-	width: 137px;
-	}
+.banner {
+    width: 598px;
+}
 
-/* This class is for the navigation bar primary links. For example the links for "home," "classes," "gallery," etc. are the primary navigation links.  This only applies to the background and table-cell size of the table containing these links, NOT the links. To change the links see the four ".class1" link settings to change them below (located under the section entitled Links */
+.leftheader a,
+.banner a {
+    display: block;
+}
 
-.navbarcellmain {
-	height: 25px;
-	width: 137px;
-	background-color: #c60;
-	text-align:left;
-	}
+.content {
+    padding: 1rem;
+}
 
-/* This class is for the navigation bar secondary links. For example underneath the link for "home" are the secondary links "about us," "location," "updates," and "membership."  This only applies to the background and table-cell size of the table containing these links, NOT the links. To change the links see the four ".class2" link settings to change them below (located under the section entitled Links */
+.note {
+    border-bottom: 1px dotted #ededed;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
 
-.navbarcell2 {
-	height: 25px;
-	width: 137px;
-	vertical-align: middle; 
-	background-color: #000;
-	text-align: left;
-	}
+.leftheader img {
+    width: 133px;
+    height: 137px;
+    margin: 2px;
+}
 
-.navbarcell_donate {
-	height: 25px;
-	width: 137px;
-	background-color: #f90;
-	}
+.banner img {
+    width: 594px;
+    height: 137px;
+    margin: 2px;
+}
 
-.bottomleft {
-	width: 137px;
-	background-color: #f90;
-	}
+.pageindicator {
+    background-color: #900;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+}
 
 .footer {
-	width: 598px;
-	background-color: #000;
-	color: #fff;
-	text-align: center;
-	font-size: 80%;
-	}
+    font-size: .75rem;
+    padding: 3rem 0 1rem;
+    border-top: 1px solid #333;
+}
 
 /* *************Links************** */
 
-.current1 {
-	color:#f90;
-	font-weight:bold;
-	margin-left:10px;
-	}
-
-.current2 {
-	color:#fff;
-	text-decoration:underline overline;
-	margin-left:15px;
-	font-size: 12px;
-	}
-
-a:link {
-	color:#900;
-	text-decoration:underline;
-	}
+a {
+    color: #fff;
+    padding-bottom: .125rem;
+    text-decoration: none;
+    border-bottom: 1px dotted #ededed;
+}
 
 a:visited {
-	color:#900;
-	text-decoration:underline;
-	}
+    color: #fff;
+}
 
 a:active {
-	color:#900;
-	text-decoration:underline;
-	}
+    color: #fff;
+}
 
+a:focus,
 a:hover {
-	color:#f00;
-	text-decoration:underline;
-	}
+    color:#f90;
+    border-bottom: 1px solid #f90;
+}
 
-/* ****Navigation Links for the Coppermine Gallery**** */
+.leftheader a,
+.banner a,
+.navbar a {
+    border-bottom: none;
+}
 
-.gallery a:link {
-	color:#900;
-	text-decoration:underline;
-	font-size:50%;
-	}
+/* Naviation */
 
-.gallery a:visited {
-	color:#900;
-	text-decoration:underline;
-	}
+.navbar ul {
+    list-style: none;
+    margin-left: 0;
+    margin-left: .5rem;
+    font-weight: 600;
+}
 
-.gallery a:active {
-	color:#900;
-	text-decoration:underline;
-	}
+.navbar a:focus {
+    outline: none;
+}
 
-.gallery a:hover {
-	color:#f00;
-	text-decoration:underline;
-	}
+.navbar > ul > li {
+    padding: .5rem 0;
+}
 
-.class1 a:link {
-	margin-left:10px; 
-	color:#900; 
-	text-decoration:none; 
-	font-weight:bold; 
-	text-align:right;
-	}
+.navbar ul ul {
+    padding: .5rem 0;
+}
 
-.class1 a:visited {
-	margin-left:10px; 
-	color:#900; 
-	text-decoration:none; 
-	font-weight:bold; 
-	text-align:right;
-	}
+.navbar a {
+    color: #adadad;
+    text-decoration:none;
+    text-align:right;
+}
 
-.class1 a:active {
-	margin-left:10px; 
-	color:#900; 
-	text-decoration:none; 
-	font-weight:bold; 
-	text-align:right;
-	}
+.navbar .active > a {
+    cursor: default;
+    color: #fff;
+}
 
-.class1 a:hover {
-	margin-left:10px; 
-	color:#f90; 
-	font-weight:bold; 
-	text-align:right;
-	}
+.navbar li:not(.active) a:hover::after,
+.navbar li:not(.active) a:focus::after {
+    content: "\203A";
+    padding-left: .25rem;
+}
 
-.class2 a:link {
-	margin-left:15px; 
-	color:#fff; 
-	text-decoration:none;
-	font-size: 13px;
-	}
+.navbar ul ul li {
+    font-size: .85rem;
+    line-height: 2.5;
+    font-weight: 400;
+}
 
-.class2 a:visited {
-	margin-left:15px; 
-	color:#fff; 
-	text-decoration:none;
-	font-size: 13px;
-	}
+.navbar ul ul li.active > a::after,
+.active > a::after {
+    content: "\203A";
+    padding-left: .25rem;
+}
 
-.class2 a:active {
-	margin-left:15px; 
-	color:#fff; 
-	text-decoration:none;
-	font-size: 13px;
-	}
-
-.class2 a:hover {
-	margin-left:15px; 
-	color:#fff; 
-	text-decoration:underline overline;
-	font-size: 13px;
-	}
 
 /* ********Fonts, Headers, and Footers********** */
 
-ul, p, .description {
-	font-size: 80%;
-	line-height:120%;
-	margin: 0 0 10px 25px;
-}
-
 ul {
-	margin-left: 25px;
-	padding-left:25px;
+    margin-left: 1rem;
+    padding-left: 1rem;
 }
 
-.header1, h1 {
-	color:#fff;
-	font-size:200%;
-	text-align:right;
-	font-weight:normal;
-	}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+    font-weight: normal;
+}
 
-.header2, h2 {
-	font-size: 150%;
-	color: #900; 
-	/*font-variant: small-caps;	*/
-	font-weight:normal;
-	margin:25px 0 5px 25px;
-	}
-	
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
 h2.section-head {
-	margin-top:50px;
-	border-bottom:1px solid #900;	
+    margin-top: 50px;
+    border-bottom: 1px solid #900;
 }
 
-.header3, h3 {
-	font-size: 150%; 
-	color: #900; 
-	/*font-variant: small-caps;*/
-	font-weight:normal;
-	margin:10px 0 5px 25px;
+h3 {
+    font-size: 1.5rem;
 }
 
 .header4, h4 {
-	font-size: 125%; 
-	color: #900; 
-	/*font-variant: small-caps;	*/
-	font-weight:normal;
-	margin:10px 0 5px 25px;
-	}
+    font-size: 1.25rem;
+}
 
 .description2 {
 	font-size: 125%;
 	margin-left: 25px;
 	}
 
-.firstletter {
-	font-size:300%;
-	width: .9em;
-	line-height: 75%;
-	color: #900;
-	float: left;
-	}
-
-.firstletter3 {
-	font-size: 300%;
-	width: .75em;
-	line-height: 75%;
-	color: #900;
-	float: left;
-	}
-
-.firstletter4 {
-	font-size: 300%;
-	width: .3em;
-	line-height: 75%;
-	color: #900;
-	float: left;	
-	}
-
 .date {
 	font-size: 75%;
-	}
-
-.note {
-	font-size: 75%;
-	text-decoration: none;
 	}
 
 .tiny {
@@ -336,10 +695,6 @@ h2.section-head {
 	color: #900;
 	font-style: italic;
 	font-weight: bold;
-	}
-
-.ital {
-	font-style: italic;	
 	}
 
 .emphasis {
@@ -370,223 +725,37 @@ img.floatleft {
 	margin: 4px;
 	}
 
-/* COPPERMINE GaLLERY STYLE INFORMaTION: The following style classes apply to the Coppermine Gallery Page. To avoid overlap of styles, I have brought over the needed style code from the Coppermine theme and placed it here. */
-
-.admin_menu_thumb {
-	font-family:"Futura Lt BT", arial, sans-serif;
-	font-size: 10px;
-	border: 1px solid #666;
-	background: #ccc;
-	background-position : bottom;
-	color: #000;
-	font-weight: bold;
-	margin: 0px;
-	width: 85px;
-	}
-
-.admin_menu_thumb a {
-	color: #000;
-	text-decoration: none;
-	display: block;
-	position: relative;
-	padding: 1px 5px;
-	}
-
-.admin_menu_thumb a:hover {
-	color: #000;
-	text-decoration: underline;
-	}
-
-.admin_menu {
-	font-family:"Futura Lt BT", arial, sans-serif;
-	font-size: 10px;
-	border-top: 2px solid #999;
-	border-left: 2px solid #999999;
-	border-bottom: 1px solid #ccc;
-	border-right: 1px solid #ccc;
-	background: #ccc;
-	background-position : bottom;
-	color: #000;
-	margin: 0px;
-	text-align: center;
-	}
-
-.admin_menu a {
-	color: #000;
-	text-decoration: none;
-	display: block;
-	position: relative;
-	padding: 1px 5px;
-	}
-
-.admin_menu a:hover {
-	color: #000;
-	text-decoration: underline;
-	}
-	
-.maintable {
-	border: 1px solid #666;
-	margin: 1px;
-	background-image: url(images/handu.jpg);
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	}
-
-.tableh1 {
-	background: #900;
-	font-size: 14px;
-	color : #fff;
-	padding: 6px 10px;
-	}
-
-.tableh1_compact {
-	background: #c60;
-	color : #fff;
-	padding: 2px 5px;
-	font-size: 8px;
-	}
-	
-.tableh2 {
-	background: #f90;
-	color : #900;
-	padding: 3px 10px;
-	}
-
-.tableh2_compact {
-	background: transparent;
-	color : #fff;
-	padding: 2px 5px;
-	}
-
-.tableb {
-	background: transparent;
-	padding: 2px 10px;
-	}
-
-.tableb_compact {
-	background: transparent;
-	padding: 2px 5px;
-	}
-
-.tablef {
-	background: transparent;
-	padding: 10px;
-	}
-
-.cattitle  {
-	font-weight: bold;
-	font-size: 12px;
-	letter-spacing: 1px;
-	color : #fff;
-	}
-
-.catlink {
-	font-size: 24px;
-	display: block;
-	margin-bottom: 2px;
-	}
-
-.catlink a {
-	text-decoration: underline;
-	color: #900;
-	letter-spacing: 0,5px;
-	}
-
-.catlink a:hover {
-	color: #f00;
-	text-decoration: none;
-	}
-
-.image {
-	border: solid 2px #999;
-	margin: 2px;
-	}
-
-.thumbnails {
-	background: transparent;
-	padding: 5px;
-	}
-
-.album_stat {
-	font-size: 75%;
-	margin: 5px 0px;
-	}
-
-.statlink {
-	color: #fff;
-	}
-
-.statlink a {
-	text-decoration: none;
-	color: #fff;
-	}
-
-.statlink a:hover {
-	color: #fff;
-	text-decoration: underline;
-	}
-	
-/* registration form styles  */
-.form_title{
-    color : #000000;
-    font-size: 13px;
-    font-family: "Futura Lt BT", arial, sans-serif; sans-serif;
-    font-weight : bold;
+/**
+ * Utility Classes
+ */
+.margin-left-1 {
+    margin-left: 1rem;
 }
 
-.form_field {
-    font-size : 15px;
-    font-family : "Futura Lt BT", arial, sans-serif;
-    color : #FFFFFF;
-    text-align:left;
+.clearFloat{
+    clear: both;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
 }
 
-.form_text{
-    font-size : 14px;
-    font-family : "Futura Lt BT", arial, sans-serif;
-    color : #000000;
+.text-screenreader {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
+    transition: height 1s;
 }
-
-.form_text2{
-    font-size : 14px;
-    font-family : "Futura Lt BT", arial, sans-serif;
-    color : #FFFFFF;
+#skip:focus {
+    position:static;
+    width:auto;
+    height:auto;
+    font-size: .75rem;
+    text-decoration: underline;
 }
-
-.text_box{
-    font-size : 11px;
-    font-family : "Futura Lt BT", arial, sans-serif;
-    color : #000000;
-    width:200px;
-}
-
-.text_area{
-    font-size : 11px;
-    font-family : "Futura Lt BT", arial, sans-serif;
-    color : #000000;
-    width:200px;
-    height:60px;
-}
-
-.text_select{
-    font-size : 11px;
-    font-family : "Futura Lt BT", arial, sans-serif;
-    color : #000000;
-}
-
-.form_error{
-    font-size : 14px;
-    font-family : "Futura Lt BT", arial, sans-serif;
-    color : #ff0000;
-    font-weight : bold;
-}
-
-.copyright{
-    font-size : 11px;
-    font-family : "Futura Lt BT", arial, sans-serif;
-    color : #FFFFFF;
-}
-
-/* clearFloat - leave at bottom */
-
-.clearFloat{clear:both;height:0;margin:0;padding:0;border:0;font-size:0;line-height:0;}
