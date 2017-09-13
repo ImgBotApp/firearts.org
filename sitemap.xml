@@ -138,12 +138,6 @@
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://www.firearts.org/michael.html</loc>
-  <priority>0.5</priority>
-  <lastmod>2016-08-06T01:23:10+00:00</lastmod>
-  <changefreq>daily</changefreq>
-</url>
-<url>
   <loc>http://www.firearts.org/bryce.html</loc>
   <priority>0.5</priority>
   <lastmod>2016-08-06T01:23:10+00:00</lastmod>
@@ -169,12 +163,6 @@
 </url>
 <url>
   <loc>http://www.firearts.org/elisotelo.html</loc>
-  <priority>0.5</priority>
-  <lastmod>2016-08-06T01:23:10+00:00</lastmod>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://www.firearts.org/bouba.html</loc>
   <priority>0.5</priority>
   <lastmod>2016-08-06T01:23:10+00:00</lastmod>
   <changefreq>daily</changefreq>
