@@ -589,7 +589,102 @@ a:hover {
 }
 
 .navbar ul ul {
+    display: none;
+}
+
+.home .navbar .home ul,
+.about .navbar .home ul,
+.location .navbar .home ul,
+.membership .navbar .home ul,
+.classes .navbar .classes ul,
+.foundry .navbar .classes ul,
+.furniture .navbar .classes ul,
+.metal-sculpture .navbar .classes ul,
+.stone .navbar .classes ul,
+.forging .navbar .classes ul,
+.figure .navbar .classes ul,
+.full-list .navbar .classes ul,
+.gallery .navbar .gallery ul,
+.vince .navbar .gallery ul,
+.bryce .navbar .gallery ul,
+.kristin .navbar .gallery ul,
+.jon .navbar .gallery ul,
+.kristian .navbar .gallery ul,
+.elisotelo .navbar .gallery ul,
+.lamar .navbar .gallery ul,
+.student .navbar .gallery ul,
+.links .navbar .links ul,
+.facartists .navbar .links ul,
+.chicagoart .navbar .links ul,
+.wishlist .navbar .donate ul,
+.donate .navbar .donate ul {
+    display: block;
+    height: auto;
     padding: .5rem 0;
+}
+
+.home .navbar .home > a,
+.about .navbar .about > a,
+.location .navbar .location > a,
+.membership .navbar .membership > a,
+.classes .navbar .classes > a,
+.foundry .navbar .foundry > a,
+.furniture .navbar .furniture > a,
+.metal-sculpture .navbar .metal-sculpture > a,
+.stone .navbar .stone > a,
+.forging .navbar .forging > a,
+.figure .navbar .figure > a,
+.full-list .navbar .full-list > a,
+.gallery .navbar .gallery > a,
+.vince .navbar .vince > a,
+.bryce .navbar .bryce > a,
+.kristin .navbar .kristin > a,
+.jon .navbar .jon > a,
+.kristian .navbar .kristian > a,
+.elisotelo .navbar .elisotelo > a,
+.lamar .navbar .lamar > a,
+.student .navbar .student > a,
+.events .navbar .events > a,
+.links .navbar .links > a,
+.facartists .navbar .facartists > a,
+.chicagoart .navbar .chicagoart > a,
+.contact .navbar .contact > a,
+.wishlist .navbar .wishlist > a,
+.donate .navbar .donate > a {
+    cursor: default;
+    color: #fff;
+}
+
+.home .navbar .home > a::after,
+.about .navbar .about > a::after,
+.location .navbar .location > a::after,
+.membership .navbar .membership > a::after,
+.classes .navbar .classes > a::after,
+.foundry .navbar .foundry > a::after,
+.furniture .navbar .furniture > a::after,
+.metal-sculpture .navbar .metal-sculpture > a::after,
+.stone .navbar .stone > a::after,
+.forging .navbar .forging > a::after,
+.figure .navbar .figure > a::after,
+.full-list .navbar .full-list > a::after,
+.gallery .navbar .gallery > a::after,
+.vince .navbar .vince > a::after,
+.bryce .navbar .bryce > a::after,
+.kristin .navbar .kristin > a::after,
+.jon .navbar .jon > a::after,
+.kristian .navbar .kristian > a::after,
+.elisotelo .navbar .elisotelo > a::after,
+.lamar .navbar .lamar > a::after,
+.student .navbar .student > a::after,
+.events .navbar .events > a::after,
+.links .navbar .links > a::after,
+.facartists .navbar .facartists > a::after,
+.chicagoart .navbar .chicagoart > a::after,
+.contact .navbar .contact > a::after,
+.wishlist .navbar .wishlist > a::after,
+.donate .navbar .donate > a::after {
+    content: "\203A";
+    padding-left: .25rem;
 }
 
 .navbar a {
@@ -598,13 +693,8 @@ a:hover {
     text-align:right;
 }
 
-.navbar .active > a {
-    cursor: default;
-    color: #fff;
-}
-
-.navbar li:not(.active) a:hover::after,
-.navbar li:not(.active) a:focus::after {
+.navbar li a:hover::after,
+.navbar li a:focus::after {
     content: "\203A";
     padding-left: .25rem;
 }
@@ -613,12 +703,6 @@ a:hover {
     font-size: .85rem;
     line-height: 2.5;
     font-weight: 400;
-}
-
-.navbar ul ul li.active > a::after,
-.active > a::after {
-    content: "\203A";
-    padding-left: .25rem;
 }
 
 
@@ -715,6 +799,15 @@ h4 {
 
 .class-categories td img {
     margin: .125rem;
+}
+
+.class-categories a {
+    display: block;
+}
+
+.class-categories td a:focus,
+.class-categories td a:hover {
+    outline: 3px solid #f00;
 }
 
 
